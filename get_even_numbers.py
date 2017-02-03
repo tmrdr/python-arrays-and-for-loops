@@ -5,20 +5,7 @@ a3 = [1,4,4,4,4,4, 6,6,8,8,8,8,8];
 # Write a function that accepts an array as a parameter
 # and returns a new array containing only even numbers.
 def get_even_numbers(a):
-  # create a new array
-  result = [];
-  
-  # look at every element in the first array.
-  # use python to skip using an `i` variable and grab the value directly!
-  for item in a:
-    # test for even numbers
-    if item % 2 == 0:
-      # add any even number to a result array.
-      # python lists use `append` not `push`
-      result.append(item);
-  
-  # return the new array
-  return result;
+  pass
 
 print(get_even_numbers(a1))
 print(get_even_numbers(a2))

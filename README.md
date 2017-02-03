@@ -1,8 +1,32 @@
 # Python Arrays and For Loops
 Here's some pre-written JavaScript functions. Your job is to practice Python
-by converting these functions from JavaScript to Python. You may run into some
-errors along the way. If you find an error try to google for a solution. There
-should be some good Stack Overflow results for the things we're trying to do.
+by converting these functions from JavaScript to Python.
+
+Each of the Python files has the function definitions that you're expected
+to write. All of the functions have the Python keyword `pass` inside the
+functions. `pass` simple means "do nothing" and allows methods to maintain
+proper indentation.
+
+You should delete `pass` when you write the function and replace it with your
+own code.
+
+# Running Solutions
+Run the original JavaScript files with `node`, and run your Python solutions
+with `python3` both in your terminal. Look at the output and make sure they
+print out the same things:
+
+```
+node fileName.js
+python3 file_name.js
+```
+
+Scroll down to the end of this readme to see an advanced bash trick you
+can use to run all .js programs and .py programs in your current directory.
+
+# Common Errors
+You may run into some errors along the way. If you find an error try to google
+for a solution. There should be some good Stack Overflow results for the things
+  we're trying to do.
 
 Here are several commong errors I expect you to run into:
 
@@ -71,6 +95,33 @@ def print_hello()
 def print_hello():
   print("hello!")
   print("hello!")
+```
+
+# Bash Magic
+Your terminal uses a shell called bash. Bash is a scripting langauge that
+has it's own way to write for loops, create variables, run if statements
+and create variables. In your career as a programmer you'll naturally
+pick up more and more bash, just like you're already familiar with
+common commands like `ls`, `cd`, and `mkdir`.
+
+You can copy and paste these pieces of code and run them in your terminal.
+The commands list all the files that have a `.js` or `py` extension and
+run them with either `node` or `python3`. Running these for loops is a good
+way to quickly check how your Python output compares to your JavaScript
+output when you're all done.
+
+```bash
+for JS in `ls *.js`
+do
+node $JS
+done
+```
+
+```bash
+for PY in `ls *.py`
+do
+node $PY
+done
 ```
 
 ## Licensing

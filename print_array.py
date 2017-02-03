@@ -1,5 +1,5 @@
 # Python won't allow you to append an int and a string together implicitly.
-# You need to manually convert a number to string in order to append it to 
+# You need to manually convert a number to string in order to append it to
 # another string.
 #
 # Expirement with it in the IPython shell:
@@ -13,7 +13,7 @@
 # bad_concat = ""
 # for item in a:
 #   bad_concat += item
-# 
+#
 # You'll see the code above crash with an error: "TypeError: must be str, not int"
 # Fix the error by manually passing the item through the str() function.
 #
@@ -22,17 +22,7 @@
 #   good_concat += str(item)
 # print(good_concat)
 def array_to_string(a):
-  if len(a) == 0:
-    return "[]"
-
-  result = str(a[0])
-
-  # 
-  for item in a[1:]:
-    result += "," + str(item)
-  
-  return "[" + result + "]"
+  pass
 
 print(array_to_string([42, 12, 90]))
 print(array_to_string([]))
-
