@@ -1,5 +1,12 @@
 def is_ascending(a):
-  pass
+  for i in range(1, len(a)):
+      if a[i - 1] > a[i]:
+          return False
+  else:
+    return True
+
+"""done"""
+
 
 a1 = [1, 2, 3, 4, 8, 10];
 a2 = [1, 2, 3, 4, 8, 6, 10];

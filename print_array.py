@@ -22,7 +22,14 @@
 #   good_concat += str(item)
 # print(good_concat)
 def array_to_string(a):
-  pass
+  if len(a) == 0:
+      return "[]"
+  result = "" + str(a[0])
+  for i in a[1:]:
+      result = result + ',' +str(i)
+  return "[" + result + "]"
+
+ #done
 
 print(array_to_string([42, 12, 90]))
 print(array_to_string([]))
