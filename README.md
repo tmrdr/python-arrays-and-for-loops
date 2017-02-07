@@ -17,7 +17,7 @@ print out the same things:
 
 ```
 node fileName.js
-python3 file_name.js
+python3 file_name.py
 ```
 
 Scroll down to the end of this readme to see an advanced bash trick you
